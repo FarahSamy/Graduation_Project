@@ -1,0 +1,80 @@
+ {% extends 'base.hml' %}
+  <!-- Start Sell-car  -->
+ {% block contet %}
+  <div class="sell-car">
+    <div class="container">
+      <form action="">
+        <div class="vehicle">
+          <h4>Vehicle Details:</h4>
+          <select name="condition" id="condition">
+            <option value="Condition">Condition</option>
+            <option value="Condition">New</option>
+            <option value="Condition">Used</option>
+          </select>
+          <select name="type" id="type">
+            <option value="type">Transmission</option>
+            <option value="type">Manual</option>
+            <option value="type">Automatic</option>
+          </select>
+          <select name="make" id="make">
+            <option value="make">Make</option>
+          </select>
+          <select name="model" id="model">
+            <option value="model">Model</option>
+          </select>
+          <select name="year" id="year">
+            <option value="year">Year</option>
+            <option value="year">2023</option>
+            <option value="year">2022</option>
+          </select>
+        </div>
+        <div class="personal">
+          <h4>Personal Details:</h4>
+          <div class="info">
+            <div class="info-box">
+              <p>First Name*</p>
+              <input type="text">
+            </div>
+            <div class="info-box">
+              <p>Last Name*</p>
+              <input type="text">
+            </div>
+            <div class="info-box">
+              <p>City*</p>
+              <input type="text">
+            </div>
+            <div class="info-box">
+              <p>Phone Number*</p>
+              <input type="text">
+            </div>
+            <div class="info-box">
+              <p>Nearst Location</p>
+              <input type="text">
+            </div>
+            <div class="info-box">
+              <p>Email*</p>
+              <input type="email">
+            </div>
+          </div>
+        </div>
+        <div class="price">
+          <h4>Estimated Price:</h4>
+          <div class="info-box">
+            <p>Price*</p>
+            <input type="text">
+          </div>
+        </div>
+        <!-- <div class="description">
+          <h4>Description</h4>
+          <textarea class="main-input" name="description"></textarea>
+        </div> -->
+        <div class="image">
+          <h4>Image</h4>
+          <input type="text" placeholder="Upload image">
+        </div>
+      </form>
+      <input type="submit" value="Upload" />
+    </div>
+  </div>
+  <!-- End Sell-car  -->
+ {% endblock content %}
