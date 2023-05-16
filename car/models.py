@@ -3,7 +3,7 @@ from datetime import datetime
 
 # Create your models here.
 class Signup(models.Model):
-    userName = models.CharField(max_length=50)
+    username = models.CharField(max_length=50)
     Email = models.CharField(max_length=50)
     phone = models.IntegerField()
     password = models.CharField(max_length=50)
