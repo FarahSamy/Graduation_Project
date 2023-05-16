@@ -1,0 +1,380 @@
+ {% extends 'baseIndex.html' %}
+{% load static %}
+ {% block content %}
+  <a href="#home">
+    <span class="up"><i class="fa-solid fa-angle-up"></i></span>
+  </a>
+  <!-- Start Header -->
+<div class="bar">
+    <header>
+      <a href="index.html" class="logo" id="logo">
+        <img src="{% static 'images/favpng_sports-car-logo.png' %}" alt="logo">
+        <p>CarCraft</p>
+      </a>
+      <nav>
+        <div class="bars" id="bars">
+          <i class="fa-solid fa-bars toggle-menu"></i>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#used-cars">Used Cars</a></li>
+            <li><a href="Sell-Car.html">Sell Car</a></li>
+            <li><a href="Compare-Cars.html">Compare Cars</a></li>
+            <li><a href="query.html">Query Search</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="form">
+          <i class="fa-regular fa-user"></i>
+          <a href="login.html">Log in</a>
+          <a class="wall" href="sign-up.html">Sign up</a>
+          <a class="prof" href="profile.html">Profile</a>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!-- End Header -->
+  <!-- Start Home -->
+  <div class="home" id="home">
+    <div class="overlay"></div>
+    <div class="box">
+      <div class="text">
+        <h2>Find Your <span>Dream</span> Car</h2>
+      </div>
+      <div class="search-box">
+        <ul>
+          <li>All</li>
+          <li class="active">New</li>
+          <li>Used</li>
+        </ul>
+        <div class="dropbox">
+          <select name="Makes" id="all-makes">
+            <option value="All Makes">All Makes</option>
+          </select>
+          <div class="price">
+            <select name="Max Price" id="price">
+              <option value="Price">Min Price</option>
+            </select>
+            <select name="Year" id="years">
+              <option value="year">Max Price</option>
+            </select>
+          </div>
+        </div>
+        <a class="search" href="search.html">Search <i class=" fa-solid fa-magnifying-glass"> </i></a>
+        <a href="query.html">
+          <i class="query fa-solid fa-question "></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- End Home -->
+  <!-- Start popular listing -->
+  <div class="popular-listing">
+    <div class="container">
+      <div class="text">
+        <h2>Popular listings</h2>
+        <p>New</p>
+      </div>
+      <div class="imgs-container">
+        <div class="box">
+          <a href="car-view.html">
+            <img src="images/img-1.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-2.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-3.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-4.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-5.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-6.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-7.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+      <div class="box">
+        <a href="car-view.html">
+          <img src="images/img-8.jpg" alt="car photo">
+          <div class="caption">
+            <h4>Awesome Image</h4>
+            <span>40,000</span>
+            <ul>
+              <li class="active">2023</li>
+              <li>Automatic</li>
+              <li>Diesel</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End popular listing -->
+  <!-- Start used-cars -->
+  <div class="used-cars " id="used-cars">
+    <div class="container  swiper mySwiper">
+      <div class="text">
+        <h2>Used Cars</h2>
+      </div>
+      <div class="imgs-container  swiper-wrapper">
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-1.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-2.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-3.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-2.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-4.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-3.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-4.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+        <div class="box swiper-slide">
+          <a href="car-view.html">
+            <img src="images/audi-2.jpg" alt="car photo">
+            <div class="caption">
+              <h4>Awesome Image</h4>
+              <span>40,000</span>
+              <ul>
+                <li class="active">2023</li>
+                <li>Automatic</li>
+                <li>Diesel</li>
+              </ul>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="change-background">
+
+        <i class=" left swiper-button-prev "></i>
+        <i class=" right swiper-button-next "></i>
+      </div>
+    </div>
+  </div>
+  <!-- End used-cars -->
+  <!-- Start About -->
+  <div class="about" id="About">
+    <div class="caontainer">
+      <div class="main-heading">
+        <h2>About Us</h2>
+      </div>
+      <div class="content">
+        <div class="text">
+          <i class="fa-solid fa-award "></i>
+          <h4>Wide range of brands</h4>
+          <p>We can help with your financing plan, we can offer some tips and tricks. Drive off with this dream car of
+            yours regardless of your credit history.</p>
+        </div>
+        <div class="text">
+          <i class="fa-sharp fa-solid fa-people-group"></i>
+          <h4>Trusted by our clients</h4>
+          <p>We can help with your financing plan, we can offer some tips and tricks. Drive off with this dream car of
+            yours regardless of your credit history.</p>
+        </div>
+        <div class="text">
+          <i class="fa-solid fa-money-bill-1-wave"></i>
+          <h4>Fast & easy financing</h4>
+          <p>We can help with your financing plan, we can offer some tips and tricks. Drive off with this dream car of
+            yours regardless of your credit history.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+  <!-- Start Contact -->
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="main-heading">
+        <h2>Contact Us</h2>
+        <p>We would happily be able to get you in reach of new and pre-owned vehicles . Average prices and the best
+          customer
+          service guaranteed.
+        </p>
+      </div>
+      <div class="content">
+        <form action="">
+          <input class="main-input" type="text" name="name" placeholder="Your Name">
+          <input class="main-input" type="email" name="mail" placeholder="Your E-mail">
+          <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send Message" />
+        </form>
+        <div class="info">
+          <h4>Get In Touch</h4>
+          <div class="phone">+00 123.45.789</div>
+          <div class="phone">+00 123.45.789</div>
+          <h4>Where We Are</h4>
+          <address> Address street 17 <br> Alexandria, Alex <br> 123-4567-890 <br> Egypt </address>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ {% endblock content %}
