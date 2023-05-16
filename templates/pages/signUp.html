@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+
+ <!-- Start Signup -->
+{% block content %}
+  <div class="signup-page">
+    <div class="container">
+      <div class="signup">
+        <h2>Register</h2>
+        <p>Create new account today.</p>
+        <form method="POST">
+           {% csrf_token %}
+          <input class="input" type="text" name="username" placeholder="username*">
+          <input class="input" type="email" name="email" placeholder="Email*">
+          <input class="input" type="text" name="phone" placeholder="phone">
+          <input class="input" type="password" name="password" placeholder="Password*">
+          <input type="submit" value="SignUp">
+        </form>
+        <input type="checkbox" name="Remember" id="checkbox">
+        <label for="checkbox">I accept the privacy policy</label>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Signup -->
+{% endblock content %}
