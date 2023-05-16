@@ -1,0 +1,25 @@
+ {% extends 'base.html' %}
+  <!-- Start login -->
+ {% block content %}
+  <div class="login-page">
+    <div class="container">
+      <div class="login">
+        <h2>Log in to your account</h2>
+        <p>Welcome back! Sign in to your account</p>
+         <form method ="POST">
+            {% csrf_token %}
+          <input class="input" type="email" name="name" placeholder="Email or Username">
+          <input class="input" type="password" name="password" placeholder="Password">
+             <input type="submit" value="Login">
+        </form>
+        <div class="forget-password">
+          <input type="checkbox" name="Remember" id="checkbox">
+          <label for="checkbox">Remember</label>
+          <a href="#">Forgotten Password?</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End login -->
+ {% endblock content %}
