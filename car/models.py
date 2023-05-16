@@ -12,9 +12,9 @@ class Signup(models.Model):
 class Car(models.Model):
     name = models.CharField(max_length=50)
     model = models.CharField(max_length=50)
-    year = models.IntegerFied()
-    power = models.IntegerFied()
-    Price = models.IntegerFied()
+    year = models.DateTimeField()
+    power = models.CharField(max_length=50)
+    Price = models.DecimalField(max_digits=9, decimal_places=2)
     transmission_type = models.CharField(max_length=50)
     body_style = models.CharField(max_length=50)
     cylinder = models.IntegerField()
