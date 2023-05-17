@@ -28,3 +28,31 @@ def log(request):
 def index(request):
 
     return render(request,'pages/index.html')
+
+def sellcar(request):
+
+    return render(request,'pages/sellCar.html')
+
+def query(request):
+
+    return render(request,'pages/query.html')
+
+def view(request):
+
+    return render(request,'pages/view.html')
+
+def search(request):
+
+    return render(request,'pages/search.html')
+
+def compareCars(request):
+
+    return render(request,'pages/compareCars.html')
+
+def compareResult(request):
+
+    return render(request,'pages/compareResult.html')
+
+def profile(request):
+
+    return render(request,'pages/profile.html')
