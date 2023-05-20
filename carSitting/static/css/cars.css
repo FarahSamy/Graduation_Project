@@ -692,7 +692,7 @@ nav .form .prof {
 }
 
 .used-cars .container .imgs-container .box img {
-  width: 100%;
+  width: 300px;
   border-radius: 5% 5% 0 0;
   transition: 0.5s;
 }

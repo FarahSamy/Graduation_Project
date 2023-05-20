@@ -1,5 +1,6 @@
  {% extends 'baseIndex.html' %}
 {% load static %}
+
  {% block content %}
   <a href="#home">
     <span class="up"><i class="fa-solid fa-angle-up"></i></span>
@@ -76,118 +77,30 @@
         <p>New</p>
       </div>
       <div class="imgs-container">
+
+        {% for  n in car %}
+        {% if not n.owner_car %}
         <div class="box">
           <a href="car-view.html">
-            <img src="images/img-1.jpg" alt="car photo">
+            {% if n.image %}
+            <img src="{{n.image.url}}" alt="car photo">
+            {% endif %}
             <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
+              <h4>{{n.name}}</h4>
+              <span>{{n.Price}}</span>
               <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
+                <li class="active">{{n.year}}</li>
+                <li>{{n.transmission_type}}</li>
                 <li>Diesel</li>
               </ul>
+            </div>
           </a>
-        </div>
+
       </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-2.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-3.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-4.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-5.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-6.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-7.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="box">
-        <a href="car-view.html">
-          <img src="images/img-8.jpg" alt="car photo">
-          <div class="caption">
-            <h4>Awesome Image</h4>
-            <span>40,000</span>
-            <ul>
-              <li class="active">2023</li>
-              <li>Automatic</li>
-              <li>Diesel</li>
-            </ul>
-          </div>
-        </a>
-      </div>
+        {% endif %}
+     {% endfor %}
+
+
     </div>
   </div>
   </div>
@@ -199,118 +112,28 @@
         <h2>Used Cars</h2>
       </div>
       <div class="imgs-container  swiper-wrapper">
+
+      {% for u in car %}
+        {% if u.owner_car %}
         <div class="box swiper-slide">
           <a href="car-view.html">
-            <img src="images/audi-1.jpg" alt="car photo">
+            {% if u.image %}
+            <img src="{{ u.image.url}}" alt="car photo">
+            {% endif %}
             <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
+              <h4>{{u.name}}</h4>
+              <span>{{u.Price}}</span>
               <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
+                <li class="active">{{u.year}}</li>
+                <li>{{u.transmission_type}}</li>
                 <li>Diesel</li>
               </ul>
             </div>
           </a>
         </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-2.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-3.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-2.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-4.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-3.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-4.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="box swiper-slide">
-          <a href="car-view.html">
-            <img src="images/audi-2.jpg" alt="car photo">
-            <div class="caption">
-              <h4>Awesome Image</h4>
-              <span>40,000</span>
-              <ul>
-                <li class="active">2023</li>
-                <li>Automatic</li>
-                <li>Diesel</li>
-              </ul>
-            </div>
-          </a>
-        </div>
+        {% endif %}
+        {% endfor %}
+
       </div>
       <div class="change-background">
 
