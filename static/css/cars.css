@@ -1044,6 +1044,8 @@ nav .form .prof {
 }
 
 .login-page .login input[type=submit] {
+  width: 150px;
+  margin: auto;
   padding: 14px 40px;
   background-color: var(--secondary-color);
   color: white;
@@ -1099,8 +1101,9 @@ nav .form .prof {
 
 
 .signup-page .signup input[type=submit] {
+  width: 150px;
+  margin: auto;
   padding: 14px 40px;
-  margin-left: 45px;
   background-color: var(--secondary-color);
   color: white;
   border: none;
